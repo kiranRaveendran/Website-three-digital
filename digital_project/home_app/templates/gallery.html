@@ -1,0 +1,240 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="ht///////////////////////////////////////////////tps://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="{% static 'gallery.css' %}">
+        <title>Image Slider</title>
+        <style>
+      .Footer{
+        background-color: rgb(65, 65, 65);
+       
+      }
+      .footer_period{
+        text-align: center;
+
+      }
+      .inner_footer{
+        display: flex;
+       
+        flex-direction: row;
+        justify-content:space-evenly;
+      }
+      .options{
+        display: flex;
+         gap: 7rem;
+           
+      }
+      .icon{
+        display: flex;
+        gap: 1rem;
+      }
+      .media_icon{
+        display: flex;
+        gap: 2rem;
+         margin-top: 1rem;
+        
+      }
+      .social_media,.options{
+         margin-top: 2rem;
+      }
+    </style>
+    </head>
+    <body>
+        <!-- nav bar -->
+        <div class="nav_container">
+
+            <div class="nav_bar  flex justify-between items-center h-[13vh] ">
+                <div
+                    class="div_one object-center flex justify-center sm:justify-start w-[90vw] sm:w-[40vw] ">
+                    <img class="sm:w-[6vw]" src="{% static 'image/logo.svg' %}"
+                        alt>
+                </div>
+                <div
+                    class="menus w-[60vw] hidden sm:flex items-center gap-3 lg:gap-12">
+                    <div class="menu_one text-center">
+                        <img src="{% static 'image/Rectangle_line.svg' %}" alt>
+                        <a class="text-xs"
+                            href="{% url 'home' %}">MAIN</a>
+                        <img src="{% static 'image/Rectangle_line.svg' %}" alt>
+                    </div>
+                    <a class="text-xs"
+                        href="{% url 'gallery' %}">GALLERY</a>
+                    <a class="text-xs" href="{% url 'projects' %}">PROJECTS</a>
+                    <a class="text-xs" href="{% url 'certifications' %}">CERTIFICATIONS</a>
+                    <a class="text-xs" href="{% url 'contact' %}">CONTACTS</a>
+                </div>
+            </div>
+        </div>
+        <!-- gallery section -->
+
+        <div class="main_container">
+            <div id="sliderContainer" class="bg-red-100  ">
+                <div id="slider" class>
+                    <p> <img class=" "
+                            src="{% static 'image/Rectangle_22.svg' %}"
+                            alt="Image 1">
+                        <img class src="{% static 'image/Rectangle_23.svg' %}"
+                            alt="Image 2"></p>
+                    <p><img class src="{% static 'image/Rectangle_24.svg' %}"
+                            alt="Image 3">
+                        <img class src="{% static 'image/Rectangle_25.svg' %}"
+                            alt="Image 4"></p>
+                    <p><img class src="{% static 'image/Rectangle_26.svg' %}"
+                            alt="Image 5">
+                        <img class src="{% static 'image/Rectangle_27.svg' %}"
+                            alt="Image 6"></p>
+                    <p><img class src="{% static 'image/Rectangle_28.svg' %}"
+                            alt="Image 7">
+                        <img class src="{% static 'image/Rectangle_29.svg' %}"
+                            alt="Image 8"></p>
+                    <p><img class src="{% static 'image/Rectangle_30.svg' %}"
+                            alt="Image 9">
+                        <img class src="{% static 'image/Rectangle_31.svg' %}"
+                            alt="Image 10"></p>
+                    <p> <img class=" "
+                            src="{% static 'image/Rectangle_22.svg' %}"
+                            alt="Image 1">
+                        <img class src="{% static 'image/Rectangle_23.svg' %}"
+                            alt="Image 2"></p>
+                    <p><img class src="{% static 'image/Rectangle_24.svg' %}"
+                            alt="Image 3">
+                        <img class src="{% static 'image/Rectangle_25.svg' %}"
+                            alt="Image 4"></p>
+                    <p><img class src="{% static 'image/Rectangle_26.svg' %}"
+                            alt="Image 5">
+                        <img class src="{% static 'image/Rectangle_27.svg' %}"
+                            alt="Image 6"></p>
+                    <p><img class src="{% static 'image/Rectangle_28.svg' %}"
+                            alt="Image 7">
+                        <img class src="{% static 'image/Rectangle_29.svg' %}"
+                            alt="Image 8"></p>
+                    <p><img class src="{% static 'image/Rectangle_30.svg' %}"
+                            alt="Image 9">
+                        <img class src="{% static 'image/Rectangle_31.svg' %}"
+                            alt="Image 10"></p>
+                    <p> <img class=" "
+                            src="{% static 'image/Rectangle_22.svg' %}"
+                            alt="Image 1">
+                        <img class src="{% static 'image/Rectangle_23.svg' %}"
+                            alt="Image 2"></p>
+                    <p><img class src="{% static 'image/Rectangle_24.svg' %}"
+                            alt="Image 3">
+                        <img class src="{% static 'image/Rectangle_25.svg' %}"
+                            alt="Image 4"></p>
+                    <p><img class src="{% static 'image/Rectangle_26.svg' %}"
+                            alt="Image 5">
+                        <img class src="{% static 'image/Rectangle_27.svg' %}"
+                            alt="Image 6"></p>
+                    <p><img class src="{% static 'image/Rectangle_28.svg' %}"
+                            alt="Image 7">
+                        <img class src="{% static 'image/Rectangle_29.svg' %}"
+                            alt="Image 8"></p>
+                    <p><img class src="{% static 'image/Rectangle_30.svg' %}"
+                            alt="Image 9">
+                        <img class src="{% static 'image/Rectangle_31.svg' %}"
+                            alt="Image 10"></p>
+                    <p> <img class=" "
+                            src="{% static 'image/Rectangle_22.svg' %}"
+                            alt="Image 1">
+                        <img class src="{% static 'image/Rectangle_23.svg' %}"
+                            alt="Image 2"></p>
+                    <p><img class src="{% static 'image/Rectangle_24.svg' %}"
+                            alt="Image 3">
+                        <img class src="{% static 'image/Rectangle_25.svg' %}"
+                            alt="Image 4"></p>
+                    <p><img class src="{% static 'image/Rectangle_26.svg' %}"
+                            alt="Image 5">
+                        <img class src="{% static 'image/Rectangle_27.svg' %}"
+                            alt="Image 6"></p>
+                    <p><img class src="{% static 'image/Rectangle_28.svg' %}"
+                            alt="Image 7">
+                        <img class src="{% static 'image/Rectangle_29.svg' %}"
+                            alt="Image 8"></p>
+                    <p><img class src="{% static 'image/Rectangle_30.svg' %}"
+                            alt="Image 9">
+                        <img class src="{% static 'image/Rectangle_31.svg' %}"
+                            alt="Image 10"></p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prevBtn"><i
+                    class="fa-solid fa-arrow-left "></i></button>
+            <button id="nextBtn"><i
+                    class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- footer section -->
+        <div class="Footer w-full bg-stone-700 h-full xl:h-[50vh] text-white">
+            <div
+                class="inner_footer flex flex-col justify-center items-center  sm:items-start  py-5 sm:py-10 sm:flex-row  gap-10  xl:gap-36">
+
+                <div class="img">
+                    <img class class="h-[8vh]"
+                        src="{% static 'image/logo2.svg' %}"
+                        alt>
+                </div>
+                <div class="options flex gap-4 sm:gap-10 lg:gap-36">
+                    <div class="info flex flex-col gap-2 text-xs sm:text-base">
+                        <b class="mb-3">Information</b>
+                        <p>main</p>
+                        <p>Gallery</p>
+                        <p>Projects</p>
+                        <p> Certifications</p>
+                        <p>Contacts</p>
+                    </div>
+                    <div class="contact text-xs sm:text-base">
+                        <b class="mb-3">Contacts</b>
+                        <div class="icons flex flex-col gap-5">
+                            <div class="icon flex gap-5">
+                                <img src="{% static 'image/location.svg' %}"
+                                    alt>
+                                <div class="address">
+                                    <p>1234 sample street</p>
+                                    <p>Austin Texas 78704</p>
+                                </div>
+                            </div>
+                            <div class="icon flex gap-5">
+                                <img src="{% static 'image/phone.svg' %}" alt>
+                                <p>9562478515</p>
+                            </div>
+                            <div class="icon flex gap-5">
+                                <img src="{% static 'image/email.svg' %}" alt>
+                                <p>sample@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_media ">
+                    <b class="text-center sm:text-left mb-3">Social Media</b>
+                    <div class="media_icon flex sm:flex-col lg:flex-row  gap-5">
+                        <img class="h-[2vh]" src="{% static 'image/f.svg' %}"
+                            alt>
+                        <img class="h-[2vh]" src="{% static 'image/x.svg' %}"
+                            alt>
+                        <img class="h-[2vh]"
+                            src="{% static 'image/linkedin.svg' %}" alt>
+                        <img class="h-[2vh]" src="{% static 'image/q.svg' %}"
+                            alt>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+                <div class="footer_period flex items-center justify-center">
+                    <span class="text-center py-3">@ 2021 all rights reserved</span>
+                </div>
+        </div>
+        <script src="{% static 'gallery.js' %}"></script>
+    </body>
+</html>
+
+ 

@@ -1,0 +1,52 @@
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: light;
+  }
+  
+/* Finate scrolling */
+  /* 
+ */
+
+/* navbar */
+  .menu i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu.active i {
+    transform: rotate(90deg);
+}
+
+/* readmore */
+#more
+ {display: none;}
+
+
+ /* infinitescrolling */
+ .infinite-scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  width: 200%; /* This is the key to the infinite scroll effect */
+  animation: infinite-scroll 40s linear infinite;
+  justify-content: end;
+
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* slider */

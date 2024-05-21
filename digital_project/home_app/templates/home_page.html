@@ -1,0 +1,152 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+<!-- main container  -->
+<div class="Main_container   px-5 sm:px-16 ">
+<!-- section one -->
+<div
+    class="section_one flex flex-col-reverse sm:flex-row items-center sm:mb-24">
+    <div
+        class="child1  w-[40vw] py-10 sm:mb-28 flex flex-col justify-center items-center sm:items-start tracking-[.70em]">
+        <h1 class="text-zinc-400 text-3xl lg:text-5xl">PROJECT</h1>
+        <h1 class="text-zinc-800 text-3xl lg:text-5xl font-bold">Lorum</h1>
+    </div>
+    <div class="child2 bg-red-800  w-[60vw]  relative ">
+        <img class="w-full" src=" {% static 'image/picture_one.svg' %}" alt>
+        <a href="#"
+            class="text-zinc-400 font-semibold bg-white w-fit px-1 sm:px-10 py-2 sm:py-6 absolute bottom-0">VIEW
+            PROJECT <i class="px-3 fa-solid fa-arrow-right-long"></i></a>
+    </div>
+</div>
+<!-- section two -->
+<div
+    class="section_two bg-gray-50 w-full flex flex-col xl:flex-row px-6 sm:px-20 py-10 sm:mb-14">
+    <div class="child1 flex gap-4 xl:w-[60vw] flex flex-col xl:flex-row">
+        <div class="box1 flex flex-col gap-4 ">
+            <img src="{% static 'image/section1.svg' %}" alt>
+            <img src="{% static 'image/section2.svg' %}" alt>
+        </div>
+        <img src="{% static 'image/section3.svg' %}" alt>
+    </div>
+    <div class="child2 xl:w-[40vw] lx:text-left">
+        <div class="content ">
+            <h1
+                class="text-zinc-400 text-3xl lg:text-5xl pt-3 sm:py-0 text-center sm:text-left">About</h1>
+            <p class="py-4 sm:py-7">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1400s,
+                when an unknown printer took a galley of type and scrambled it
+                to make a type
+                specimen book. It has survived not only five centuries, but also
+                the leap into
+                electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="button mt-3 flex justify-center sm:justify-start">
+            <a href="#"
+                class="text-zinc-400 font-semibold bg-white w-fit px-3 sm:px-10 py-2 sm:py-6">READ
+                MORE<i class="px-3 fa-solid fa-arrow-right-long"></i></a>
+
+        </div>
+    </div>
+</div>
+<!-- section three -->
+<div class="section_three w-full sm:py-5">
+    <h1
+        class="text-zinc-400 text-3xl lg:text-5xl  text-center sm:text-left">Main
+        Focus/Mission Statement</h1>
+    <div
+        class="boxes flex flex-col lg:flex-row justify-center items-center sm:items-left sm:justify-between">
+        <div class="box  flex items-center">
+            <p class="text-zinc-400 text-[10rem] font-bold w-fit ">1</p>
+            <p class="sm:w-[35vw]  ">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed efficitur,
+                lectus et facilisis placerat magna mauris porttitor tortor, a
+                auctor est nisl..</p>
+        </div>
+        <div class="box  flex items-center">
+            <p class="text-zinc-400 text-[10rem] font-bold w-fit">2</p>
+            <p class="sm:w-[35vw] pl-3 ">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed efficitur, lectus et
+                facilisis placerat, magna mauris porttitor tortor, a auctor est
+                felis ut nisl.</p>
+        </div>
+    </div>
+</div>
+<!-- section Four -->
+<div class="section_three w-full sm:py-5 flex flex-col gap-5">
+    <h1
+        class="text-zinc-400 text-3xl lg:text-5xl py-5 sm:py-10 text-center sm:text-left">Our
+        Projects</h1>
+    <div class="box1 flex flex-col lg:flex-row lg:">
+        <!-- sample project heading -->
+
+        <h1
+            class="heading relative w-full lg:w-2/4 object-cover pb-4 lg:pb-0 lg:pr-2 "><img
+                class="w-full   object-cover"
+                src="{% static 'image/S4-11.svg' %}" alt>
+            <div
+                class="absolute top-5 left-8 sm:top-8 sm:left-14 flex flex-col sm:gap-1">
+                <p class="text-xl sm:text-6xl font-bold text-white">Sample</p>
+                <p class="text-xl sm:text-6xl font-bold text-white">Project</p>
+                <a href="#" class="text-white text-sm mt-2 sm:mt-4">VIEW MORE <i
+                        class="px-3 fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </h1>
+
+        <img class="w-full lg:w-2/4 object-cover lg:pl-2"
+            src="{% static 'image/S4-2.svg' %}" alt>
+    </div>
+    <div class="box2 flex flex-col lg:flex-row gap-5">
+        <img class="w-full lg:w-1/5 h-[35vh] object-cover"
+            src="{% static 'image/S4-3.svg' %}" alt>
+        <img class="w-full lg:w-2/5 h-[35vh] object-cover"
+            src="{% static 'image/S4-4.svg' %}" alt>
+        <img class="w-full lg:w-2/5 h-[35vh] object-cover"
+            src="{% static 'image/S4-5.svg' %}" alt>
+    </div>
+    <div class="box3 mt-3 flex justify-center sm:justify-end">
+        <a href="#"
+            class="text-white  font-semibold bg-zinc-800 w-fit px-3 sm:px-10 py-2 sm:py-6">READ
+            MORE<i class="px-3 fa-solid fa-arrow-right-long"></i></a>
+
+    </div>
+</div>
+<!-- section Five -->
+<a href="" name="section_three"></a>
+<div class="section_three w-full  sm:py-10 flex flex-col gap-5" >
+    <h1
+        class="text-zinc-400 text-3xl lg:text-5xl py-5 sm:py-10 text-center sm:text-left">Contact
+        Us</h1>
+    <div class="content flex flex-col-reverse sm:flex-row sm:flex-row gap-5">
+        <!-- both input boxes and image-->
+        <div class="box1 flex flex-col sm:w-[30vw] gap-3 rounded-sm h-auto px-10 sm:px-0">
+            <!-- INPUT BOXES -->
+            <input class="text-zinc-400 bg-zinc-100 w-full py-3 pl-6 rounded-sm" type="text" placeholder="Name" name="" id="">
+            <input class="text-zinc-400 bg-zinc-100 w-full py-3 pl-6 rounded-sm" type="text" placeholder="Phone Number" name="" id="">
+            <input class="text-zinc-400 bg-zinc-100 w-full py-3 pl-6 rounded-sm" type="text" placeholder="E-mail" name="" id="">
+            <input class="text-zinc-400 bg-zinc-100 w-full py-3 pl-6 rounded-sm" type="text" placeholder="Interested in" name="" id="">
+            <input class="text-zinc-400 bg-zinc-100 w-full py-3 pl-6 rounded-sm" type="text" placeholder="Interested in" name="" id="">
+            <textarea class="text-zinc-400 bg-zinc-100 w-full py-4 pl-6"  placeholder="Message" name="" id="" cols="20" rows="5"></textarea>
+        </div>
+        <div class="box2  sm:w-[70vw] h-auto">
+            <img class="h-full object-cover" src="{% static 'image/contact_us.svg' %}" alt="">
+        </div>
+    </div>
+    <div class="box3 mt-3 mb-5 flex justify-center sm:justify-start">
+        <a href="#"
+            class="text-white  font-semibold bg-zinc-800 w-fit px-3 sm:px-10 py-2 sm:py-6">SEND EMAIL
+            <i class="px-3 fa-solid fa-arrow-right-long"></i></a>
+
+    </div>
+    </div>
+</div>
+</body>
+</html>

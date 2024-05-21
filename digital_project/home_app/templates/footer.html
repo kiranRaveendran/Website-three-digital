@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://cdn.tailwindcss.com"></script>
+    <title>footer</title>
+</head>
+<body>
+    <div class="Footer w-full bg-stone-700 h-full xl:h-[50vh] text-white">
+            <div
+                class=" flex flex-col justify-center items-center  sm:items-start  py-5 sm:py-10 sm:flex-row  gap-10  xl:gap-36">
+
+                <div class="img">
+                    <img class class="h-[8vh]"
+                        src="{% static 'image/logo2.svg' %}"
+                        alt>
+                </div>
+                <div class="options flex gap-4 sm:gap-10 lg:gap-36">
+                    <div class="info flex flex-col gap-2 text-xs sm:text-base">
+                        <h1 class="mb-3">Information</h1>
+                        <p>main</p>
+                        <p>Gallery</p>
+                        <p>Projects</p>
+                        <p> Certifications</p>
+                        <p>Contacts</p>
+                    </div>
+                    <div class="contact text-xs sm:text-base">
+                        <h1 class="mb-3">Contacts</h1>
+                        <div class="icons flex flex-col gap-5">
+                            <div class="icon1 flex gap-5">
+                                <img src="{% static 'image/location.svg' %}"
+                                    alt>
+                                <div class="address">
+                                    <p>1234 sample street</p>
+                                    <p>Austin Texas 78704</p>
+                                </div>
+                            </div>
+                            <div class="icon2 flex gap-5">
+                                <img src="{% static 'image/phone.svg' %}" alt>
+                                <p>9562478515</p>
+                            </div>
+                            <div class="icon3 flex gap-5">
+                                <img src="{% static 'image/email.svg' %}" alt>
+                                <p>sample@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_media ">
+                    <h1 class="text-center sm:text-left mb-3">Social Media</h1>
+                    <div class="img flex sm:flex-col lg:flex-row  gap-5">
+                        <img class="h-[2vh]" src="{% static 'image/f.svg' %}"
+                            alt>
+                        <img class="h-[2vh]" src="{% static 'image/x.svg' %}"
+                            alt>
+                        <img class="h-[2vh]"
+                            src="{% static 'image/linkedin.svg' %}" alt>
+                        <img class="h-[2vh]" src="{% static 'image/q.svg' %}"
+                            alt>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+                <div class="flex items-center justify-center">
+                    <p class="text-center py-3">@ 2021 all rights reserved</p>
+                </div>
+        </div>
+</body>
+</html>

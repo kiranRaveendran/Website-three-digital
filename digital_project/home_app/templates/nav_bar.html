@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <title>Nav & Footer</title>
+    </head>
+
+
+    <div class="main_container px-5 sm:px-16 ">
+
+            <div class="nav_bar  flex justify-between items-center h-[13vh] ">
+                <div
+                    class="div_one object-center flex justify-center sm:justify-start w-[90vw] sm:w-[40vw] ">
+                    <img class="sm:w-[6vw]" src="{% static 'image/logo.svg' %}"
+                        alt>
+                </div>
+                <div
+                    class="menus w-[60vw] hidden sm:flex items-center gap-3 lg:gap-12">
+                    <div class="menu_one text-center">
+                        <img src="{% static 'image/Rectangle_line.svg' %}" alt>
+                        <a class="text-xs lg:text-base" href="{% url 'home' %}">MAIN</a>
+                        <img src="{% static 'image/Rectangle_line.svg' %}" alt>
+                    </div>
+                    <a class="text-xs lg:text-base" href="{% url 'gallery' %}">GALLERY</a> 
+                    <a class="text-xs lg:text-base" href="{% url 'projects' %}">PROJECTS</a>
+                    <a class="text-xs lg:text-base" href="{% url 'certifications' %}">CERTIFICATIONS</a>
+                    <a class="text-xs lg:text-base" href="{% url 'contact' %}">CONTACTS</a>
+                </div>
+            </div>
+        </div>
+       
+</body>
+</html>

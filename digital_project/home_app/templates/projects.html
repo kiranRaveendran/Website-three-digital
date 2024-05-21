@@ -1,0 +1,98 @@
+{% load static %}
+
+{% include 'nav_bar.html' %}
+        
+        <div class="innerdiv w-full  lg:h-[220vh] py-5 sm:py-10 px-8 sm:px-16 flex flex-col gap-7 ">
+            <h1 class="text-gray-400 text-3xl lg:text-5xl mb-6">Our <br> <span class="text-black roboto-light font-medium">Projects</span></h1>
+            <div class="firstdiv w-full   lg:flex justify-between  items-center bg-slate-100 ">
+                <div class="imgdiv1 w-full lg:w-[60vw]">
+                    <img  src="{% static 'image/project_34.svg' %}" alt="" class="lg:w-[80%]">
+                </div>
+                <div class="pdiv1 w-full lg:w-[40vw] ">
+                    <h1 class="text-3xl lg:text-4xl text-gray-400 text-center lg:text-left mt-4 lg:mt-0 mb-4 lg:mb-0">Sample Project 1</h1>
+                    <p class="w-full lg:w-[70%] text-black ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s mandht mvbf<span class="dots">.....</span><span class="more hidden"> Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ull</span></p>
+                    <button onclick="myFunction(this)"  type="button" class="myBtn roboto-light text-gray-500 mt-6 lg:mt-8 bg-white focus:ring-4 focus:outline-none focus:ring-green-300  dark:focus:ring-green-800 font-medium text-xs lg:text-sm px-2 py-1 lg:px-6 lg:py-4 text-center me-2  lg:ml-0">
+                        VIEW MORE <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="seconddiv w-full bg-slate-100 lg:flex justify-between items-center bg-[#FBFBFB] ">
+                <div class="imgdiv2 w-full lg:w-[60vw]">
+                    <img src="{% static 'image/project_33.svg' %}" alt="" class="lg:w-[80%]">
+                </div>
+                <div class="pdiv2 w-full lg:w-[40vw] ">
+                    <h1 class="text-2xl lg:text-4xl text-gray-400 text-center lg:text-left mt-4 lg:mt-0 mb-4 lg:mb-0 ">Sample Project 2</h1>
+                    <p class="lg:w-[70%] text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown pr <span class="dots">.....</span><span class="more hidden">, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero </span></p>
+                    <button  onclick="myFunction(this)"  type="button" class="myBtn roboto-light text-gray-500 mt-6 lg:mt-8 bg-white focus:ring-4 focus:outline-none focus:ring-green-300  dark:focus:ring-green-800 font-medium text-xs lg:text-sm px-2 py-1 lg:px-6 lg:py-4 text-center me-2  lg:ml-0">
+                        VIEW MORE <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="thirddiv w-full bg-slate-100   lg:flex justify-between items-center bg-[#FBFBFB] ">
+                <div class="imgdiv3 w-full lg:w-[60vw]">
+                    <img src="{% static 'image/project_32.svg' %}" alt="" class="lg:w-[80%]">
+                </div>
+                <div class="pdiv3 w-full lg:w-[40vw] ">
+                    <h1 class="text-2xl lg:text-4xl text-gray-400 text-center lg:text-left mt-4 lg:mt-0 mb-4 lg:mb-0">Sample Project 3</h1>
+                    <p class="lg:w-[70%] text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <span class="dots">....</span><span class="more hidden">eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida v</span></p>
+                    <button onclick="myFunction(this)" type="button" class="myBtn roboto-light text-gray-500 mt-6 lg:mt-8 bg-white focus:ring-4 focus:outline-none focus:ring-green-300  dark:focus:ring-green-800 font-medium text-xs lg:text-sm px-2 py-1 lg:px-6 lg:py-4 text-center me-2  lg:ml-0">
+                        VIEW MORE <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+    </div>
+    </div>
+            <div class="containerrrr h-full w-full flex items-center py-5 sm:py-10">
+                <div class="infinite-scroll" >
+                <ul class="list flex gap-10 overflow-hidden">
+                    <li><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_31.svg' %}" alt=""></li>
+                    <li><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_29.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_23.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_24.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_31.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_29.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_25.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_26.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_27.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_29.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_31.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_28.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_29.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_30.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_23.svg' %}" alt=""></li>
+                    <li ><img class="rounded-full h-full sm:h-[20vh]" src="{% static 'image/Rectangle_31.svg' %}" alt=""></li>
+                </ul>
+                </div>
+            </div>
+<!-- unlimited scrolling -->
+ <script> 
+ const infiniteScroll = document.querySelector('.infinite-scroll');
+
+infiniteScroll.addEventListener('scroll', function() {
+  if (infiniteScroll.scrollLeft === infiniteScroll.scrollWidth) {
+    infiniteScroll.scrollLeft = 0;
+  }else{} 
+});
+ </script>
+ <!-- view more option -->
+ <script>
+    function myFunction(button) {
+    var parentDiv = button.parentElement;
+    var dots = parentDiv.querySelector(".dots");
+    var moreText = parentDiv.querySelector(".more");
+    var btnText = parentDiv.querySelector(".myBtn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "VIEW MORE"; 
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "VIEW LESS"; 
+        moreText.style.display = "inline";
+    }
+}
+
+ </script>
+        {% include 'footer.html' %}
+
